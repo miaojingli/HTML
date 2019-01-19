@@ -2,7 +2,7 @@
 <html><!---->
 <head><!--head标签主要配置浏览器的配置信息-->
     <!--<meta charset="UTF-8"><!--网页解析编码格式配置(html5):告诉浏览器使用指定的编码格式解析文档-->-->
-    <title>html 学习</title><!--网页标题标签：告诉浏览器使用什么标题显示网页-->
+    <title>HTML 学习</title><!--网页标题标签：告诉浏览器使用什么标题显示网页-->
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/><!--HTML4:文档编码格式配置-->
 
 
@@ -19,6 +19,54 @@
     <meta http-equiv="refresh" content="url=http://www.baidu.com"/><!--网页自动跳转-->
 </head>
 <body>
-        this is my first html.
+        <!--标题标签-->
+        <h1 align="center">this is my first html</h1>
+        <h2>this is my first html</h2>
+        <h3>this is my first html</h3>
+        <h4>this is my first html</h4>
+        <h5>this is my first html</h5>
+        <h6>this is my first html</h6>
+        <hr width="600px" size="10px" color="red" align="left">
+        <h7>this is my first html</h7>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;this is my first html<br/>this is my first html
+            this is my first html<br/>this is my first html
+        </p>
+        <p>
+            this <i> is</i> my first html<br/>this is my <b>first</b>  html
+            this is <del>my first</del>  html<br/>this is my first <u>html</u>
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;this is my first html <b><i><u>this is my first html</u></i></b> this is my first html
+            this is my first html
+        </p>
 </body>
 </html>
+<!--
+    标题标签：
+        h1到h6：会将其中的数据加粗加黑显示，并且显示依次减弱，标签自带换行功能（块级标签）
+            属性：align：center   left   right
+    水平线标签：
+        hr：会在页面中显示一条水平线
+        属性：
+            width="宽度"  设置水平线的宽度
+            size="高度"   设置水平线的高度
+            color="颜色"  设置水平线的颜色
+    段落标签：
+            p：会将一段数据作为整体进行显示，主要是进行css和js操作是比较方便，会自动换行（块级元素）
+            特点：段间距比较大
+    换行符：
+            br：告诉浏览器需要在此位置换行
+    空格符：
+            &nbsp：告诉浏览器在此位置增加空格
+    权重标签：
+            b：会将内容加黑显示
+            i：会将内容斜体显示
+            u:会将内容增加下划线
+            del：会将内容增加中划线
+            以上标签不会自动换行，并且可以嵌套使用
+
+    注意：
+        1 标签的属性是对标签的功能进一步的补充，可以由开发人员自由制定标签的属性值，来达到想要的显示效果
+        2 像素单位占据的是电脑屏幕的大小，百分比占据的是浏览器窗口的大小
+-->
