@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>框架标签</title>
+</head>
+<frameset rows="20%,*,20%">
+<frame src="signout.html"/>
+    <frameset cols="30%,*">
+        <frame src="img/1.jpg"/>
+        <frame src="http://www.baidu.com"/>
+    </frameset>
+    <frame src="img/2.jpg"/>
+</frameset>
+</html>
+<!--
+    注意：
+        第一步一定要删除body标签
+    框架标签
+        frameset
+            rows：按照行进行切分页面
+            cols：按照列进行切分页面
+            子标签
+                frame：进行切分区域的占位，一个frame可以单独加载网页资源
+                    src：资源路径（本地或网络）
+                    name：区域名，结合超链接使用
+-->

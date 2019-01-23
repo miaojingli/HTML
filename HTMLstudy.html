@@ -77,8 +77,8 @@
         <h4>本地资源</h4>
         <a href="http://www.baidu.com" target="_blank"><img src="img/3.gif"/></a>
         <h4>网络资源</h4>
-        <a href="https://www.taobao.com/">淘宝一下</a><br/>
-        <a href="https://wap.sogou.com/"><img src="img/4.png"/></a>
+        <a href="https://www.taobao.com/" target="_blank">淘宝一下</a><br/>
+        <a href="https://wap.sogou.com/" target="_blank"><img src="img/4.png"/></a>
         <h4>锚点学习</h4>
         <hr/>
         <dl>
@@ -112,7 +112,7 @@
         </table>
         <hr/>
         <h5>单元格的合并</h5>
-        <table border="1px" cellpadding="10" cellspacing="0px">
+        <table border="1px" style="border-bottom: none" cellpadding="10" cellspacing="0px">
             <tr height="35px">
                 <td width="100px"></td>
                 <td width="100px"></td>
@@ -141,6 +141,24 @@
                 <td></td>
             </tr>
         </table>
+        <h4>内嵌标签</h4>
+        <hr/>
+        <a href="http://www.jd.com" target="_if">京东年货节</a>
+        <a href="http://www.taobao.com" target="tt">淘宝</a><br />
+        <iframe src="" width="48%" height="400px" name="_if"></iframe>
+        <iframe src="" width="48%" height="400px" name="tt"></iframe><br />
+        <iframe src="http://www.taobao.com" width="100%" height="400px"></iframe>
+        <h4>框架标签</h4>
+        <hr />
+        <a href="kuangjiabiaoqian.html" target="_blank">框架标签学习网页</a>
+        <h4>form表单标签</h4>
+        <hr />
+        <form action="#" method="get">
+            用户名：<input type="text" name="uname" value="王五"/><br/>
+            密码：  <input type="password" name="upwd"/><br/>
+            性别：男<input type="radio" name="sex" value="1" checked="checked"/>  女<input type="radio" name="sex" value="0"/>
+            <br /><input type="submit" value="登录"/>
+        </form>
 </body>
 </html>
 <!--
@@ -239,4 +257,43 @@
             第三步：
                 行合并：在要合并的单元格中的第一个单元格上使用属性rowspan="要合并的单元格的个数"，并删除其他要合并的单元格
                 列合并：在要合并的单元格中的第一个单元格上使用属性colspan="要合并的单元格的个数"，并删除其他要合并的单元格
+   内嵌标签：
+        iframe
+            src:要显示的网页资源路径
+                可以是本地（相对路径）也可以是网络资源（URL）
+                默认当前页面打开及加载src指向的资源
+            width:设置显示区域的宽度
+            height:设置显示区域的高度
+            name:设置内嵌区域的名字，结合超链接标签的target属性使用
+    作用：在当前网页中加载其他网页的资源，达到不同网页资源质检部互相干扰，并能在同一个页面中展现给用户的目的
+   form表单标签
+        作用：收集并提交用户数据给指定服务器
+        注意1：form标签会收集其标签内部的数据
+        属性：
+            action:收集的数据提交地址也就是URL
+            method:收集的数据的提交方式
+                    get：适合小量数据，表单数据以？隔开拼接在URL后面，不同的键值对使用&符号隔开，不安全
+                    post：适合大量数据，安全，隐式提交
+            注意2：表单数据的提交，要提交的表单项必须拥有name属性，否则不会提交
+            提交的表单项数据为键值对，键位name属性的值，值为用户书写的数据
+            注意3：form表单的数据提交需要依赖于submit提交按钮
+    form表单域标签：
+                作用：给用户可以进行数据书写或者选择的标签
+                使用：
+                文本框
+                    input
+                        type：
+                            text   收集少量的文本数据，用户可见
+                            password     收集用户密码数据
+                        name：数据提交的键，也会被js用
+                单选框
+                    input
+                        type:
+                            radio
+                        name:name属性值相同的单选框只能选择一项数据
+                        value:要提交的值
+                        checked:checked   使用此属性的单选默认是选择状态
+    form表单标签使用：
+            再点击数据提交时，form标签会将其内部所有form表单域标签中用户数写的数据按照method指明的提交方式
+            提交给action属性所指明的提交地址
 -->
