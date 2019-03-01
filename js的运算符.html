@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的运算符</title>
+    <!--
+        js的运算符
+            算数运算符：
+                加法  +
+                减法  -
+                乘法  *
+                除法  /
+                取模  %
+                number类型的和number类型的
+                number类型和boolean类型（true--1，false--0）
+                number类型和string类型（*，/，%，-）
+                string类型和string类型的数字（*，/，%，-）
+                string类型的数字和Boolean类型（*，/，%，-）
+               在算术运算中如果两边的数据类型不是number的话，会使用Number（）强转后再进行运算
+           字符串的加法会作为字符连接，不会运算
+                注意：
+                在字符串中“+”代表的是字符串的连接符，不会参与运算
+            逻辑运算符：
+                ! & && |  || (与Java的一致)
+                var a=true;
+                var b=true;
+                //alert(!a);
+                // alert(a&b);
+                alert(a&&b);
+                if(a&b){
+                    alert("haha");
+                }
+            关系运算符：返回值为true或false
+                    !=
+                    >=
+                    <=
+                    >
+                    <
+            自增运算符：
+                    ++
+                    --
+                    +=
+                    -=
+    -->
+    <!--
+        等值运算符： ==
+                先判断类型，类型一致则直接比较
+                            类型不一致，则先使用Number（）强转后再进行比较
+        等同运算符：===
+                先判断类型，类型一致则在比较内容，内容一致返回true，内容不一致返回false
+                            类型不一致则直接返回false
+        注意：
+            null和undefined在做==判断时侯返回true
+    -->
+    <script type="text/javascript">
+        /*声明变量：算术运算*/
+        /*var a=1;
+        var b=2;
+        alert(a+b);
+        var c=true;
+        alert(c+1);
+        var d="1";
+        alert(c+d);
+        alert(b+d);
+        alert(b-d);
+        alert("b*d="+b*d);
+        var e="123";
+        alert(e-d);*/
+        /*声明变量：逻辑运算*/
+        /*var a=true;
+        var b=true;
+        alert(!a);
+        alert(a&b);
+        alert(a&&b);
+        if(a&b){
+            alert("haha");
+        }*/
+        /*声明变量：js的特殊关系运算符*/
+        var a=1;
+        var a1="1";
+        var a2=true;
+        var a3="true";
+        var a4="a";
+        var a5="a";
+        /*alert(a==a1);//true
+        alert(a==a2);//true
+        alert(a==a3);//false
+        alert(a1==a2);//true
+        alert(a1==a3);//false
+        alert(a2==a3);//false
+        alert(a4==a5);//true*/
+
+        /*alert(a===a1);//false
+        alert(a===a2);//false
+        alert(a===a3);//false
+        alert(a1===a2);//false
+        alert(a1===a3);//false
+        alert(a2===a3);//false
+        alert(a4===a5);//true*/
+
+        /*alert(null==undefined);
+        alert(null===undefined);
+
+        var str=new String("123");
+        alert(123==str);
+        var str2=new String("1234");
+        alert(str==str2);*/
+    </script>
+</head>
+<body>
+    <h3>js的运算符</h3>
+    <h3>js的特殊关系运算符</h3>
+</body>
+</html>
