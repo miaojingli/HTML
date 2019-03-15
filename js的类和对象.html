@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的类和对象</title>
+    <!--
+        js中的类：
+            1.类的声明
+            2.类的使用
+            3.类的“继承”
+    -->
+    <!--声明js代码域-->
+    <script type="text/javascript">
+        //1.类的声明--Person
+        function Person(name,age) {
+            this.name=name;
+            this.age=age;
+            this.test=function (a) {
+                alert(a);
+            }
+        }
+
+        //2.使用类
+        var p1=new Person("张三",32);
+        alert(p1.name+""+p1.age);
+    </script>
+</head>
+<body>
+    <h3>js的类和对象</h3>
+</body>
+</html>
